@@ -1,26 +1,26 @@
 body {
 
     background-color: black;
-    color: white;
+    color: red;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
 ::selection {
 
-    background-color: white;
+    background-color: red;
     color: black;
 
 }
 
 ::-moz-selection {
 
-    background-color: white;
+    background-color: red;
     color: black;
 
 }
 
-.h1andh2andh3 {
+.h2andh3 {
 
     text-align: center;
     font-size: 2vw;
@@ -34,19 +34,32 @@ body {
 
 }
 
-.buttons {
+.button {
 
-    width: 5vw;
+    width: 100px;
+    height: 100px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     color: black;
     border: none;
-    background-color: white;
+    background-color: red;
+    border-radius: 70px;
 
 }
 
-.buttons:hover {
+.button:hover {
 
+    
 
+}
+
+.topbarbuttons {
+
+    width: 15vw;
+    height: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    border: none;
+    background-color: red;
 
 }

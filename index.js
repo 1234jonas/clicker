@@ -31,13 +31,15 @@ function deleteCookie(name) {
 
 }
 
+let clickFactor = 1;
+let cost = 5;
 let score = parseInt(getCookie('score')) || 0;
 const scoretext = document.getElementById("score");
 scoretext.textContent = score;
 
 function clickmeClick() {
 
-    score++;
+    score = score + clickFactor;
     scoretext.textContent = score;
     setCookie('score', score);
 
@@ -52,7 +54,31 @@ function deletescoreClick() {
 
 }
 
+function upgrade() {
+
+    if(score >= cost) {
+
+        score = score - cost;
+        cost = cost * 2;
+        clickFactor = clickFactor + 1;
+        document.getElementById("perclickandcost").textContent = `${clickFactor} | ${cost}`;
+        scoretext.textContent = score;
+
+    }
+
+}
+
+function deleteAllUpgrades() {
+
+    clickFactor = 1;
+    cost = 5;
+    document.getElementById("perclickandcost").textContent = `${clickFactor} | ${cost}`;
+
+}
+
 document.getElementById("clickme").addEventListener('click', clickmeClick);
 document.getElementById("deletescore").addEventListener('click', deletescoreClick);
+document.getElementById("purchaseupgrade").addEventListener('click', upgrade);
+document.getElementById("deleteallupgrades").addEventListener('click', deleteAllUpgrades);
 
 })
