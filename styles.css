@@ -36,14 +36,14 @@ body {
 
 .button {
 
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     color: black;
     border: none;
     background-color: red;
-    border-radius: 70px;
+    border-radius: 1000px;
 
 }
 
