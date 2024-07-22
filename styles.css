@@ -1,0 +1,52 @@
+body {
+
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+::selection {
+
+    background-color: white;
+    color: black;
+
+}
+
+::-moz-selection {
+
+    background-color: white;
+    color: black;
+
+}
+
+.h1andh2andh3 {
+
+    text-align: center;
+    font-size: 2vw;
+
+}
+
+.buttons_container {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.buttons {
+
+    width: 5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: black;
+    border: none;
+    background-color: white;
+
+}
+
+.buttons:hover {
+
+
+
+}
