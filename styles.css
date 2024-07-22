@@ -55,11 +55,17 @@ body {
 
 .topbarbuttons {
 
-    width: 15vw;
+    width: 25vw;
     height: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
     border: none;
     background-color: red;
+
+}
+
+.topbarbuttons:hover {
+
+    
 
 }
